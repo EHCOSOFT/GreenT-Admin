@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공통검포넌트</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="common-wrap">
+        <header class="header">
+            <h1>공통검포넌트</h1>
+        </header>
+        <section class="common-body">
+            <aside>
+                <ul>
+                    <li>
+                        <a href="#">Button</a>
+                    </li>
+                    <li>
+                        <a href="#">Modal</a>
+                    </li>
+                    <li>
+                        <a href="#">Input</a>
+                    </li>
+                    <li>
+                        <a href="#">Tab</a>
+                    </li>
+                    <li>
+                        <a href="#table">Table</a>
+                    </li>
+                    <li>
+                        <a href="#pagination">Pagination</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="common-element">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>BUTTON</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary">BUTTON</button>
+                                    <button type="button" class="btn btn-md btn-gray">BUTTON</button>
+                                    <button type="button" class="btn btn-lg btn-outline-primary">BUTTON</button>
+                                    <button type="button" class="btn btn-lg btn-outline-write">BUTTON</button>
+                                    <button type="button" class="btn-r btn-sm btn-primary">BUTTON</button>
+                                    <button type="button" class="btn-r btn-md btn-gray">BUTTON</button>
+                                    <button type="button" class="btn-r btn-lg btn-outline-red">BUTTON</button>
+                                    <button type="button" class="btn-r btn-lg btn-outline-gray">BUTTON</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>MODAL</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="contentModal">contentModal</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(text)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-wrap">
+                                    <div class="input-group">
+                                        <label for="">Text Field</label>
+                                        <input type="text" id="text01" placeholder="Placeholder">
+                                    </div>
+
+                                    <div class="input-group error">
+                                        <label for="">Text Field(Error)</label>
+                                        <input type="text" id="text02" placeholder="Placeholder">
+                                        <p class="error-msg">Error description</p>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="">Text Field(Disabled)</label>
+                                        <input type="text" id="text03" disabled placeholder="Placeholder">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="">Text Field</label>
+                                        <div class="input-area">
+                                            <input type="text" id="text01" placeholder="Placeholder">
+                                            <button type="button" class="btn btn-sm btn-primary">버튼명</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(Radio)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="radio-wrap">
+                                    <h2>라벨</h2>
+                                    <div class="radio-area">
+                                        <div class="radio-group">
+                                            <input type="radio" id="radio01">
+                                            <label for="radio01">기본</label>
+                                        </div>
+
+                                        <div class="radio-group">
+                                            <input type="radio" id="radio02" checked>
+                                            <label for="radio02">기본</label>
+                                        </div>
+
+                                        <div class="radio-group">
+                                            <input type="radio" id="radio03" disabled>
+                                            <label for="radio03">기본 Disabled</label>
+                                        </div>
+
+                                        <div class="radio-group">
+                                            <input type="radio" id="radio04" disabled checked>
+                                            <label for="radio04">기본 Check + Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(datepicker)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="date-group">
+                                    <!-- <h2>날짜</h2> -->
+                                    <div class="date-wrap">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date" placeholder="시작일">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>searchbox</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search">
+                                    <input type="text" placeholder="Placeholder">
+                                    <button type="button">
+                                        <i class="ico i-search"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search">
+                                    <input type="text" placeholder="Placeholder">
+                                    <button type="button">
+                                        <i class="ico i-search"></i>
+                                    </button>
+                                    <i class="ico i-clear"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search md">
+                                    <input type="text" placeholder="Placeholder">
+                                    <button type="button">
+                                        <i class="ico i-search-b"></i>
+                                    </button>
+                                    <i class="ico i-clear"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                <table id="pagination">
+                    <tbody>
+                        <tr>
+                            <td>pagination</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="pagination">
+                                    <ul>
+                                        <li class="prev"><a href=""><i class="ico i-arrow-left"></i></a></li>
+                                        <li class="active"><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li class="next"><a href=""><i class="ico i-arrow-right"></i></a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </section>
+        </section>
+    </div>
+
+    <!-- S:contentModal -->
+    <div id="contentModal" class="modal-wrap content-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="ss-modal-title">비밀번호 재설정</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>저장하시겠습니까?</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:contentModal -->
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

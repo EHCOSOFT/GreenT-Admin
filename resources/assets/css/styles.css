@@ -1,0 +1,155 @@
+@charset "utf-8";
+@import url(common.css);
+@import url(ico.css);
+
+
+/*
+ * File       : styles.css
+ * Date       : 2023. 11. 01.
+ *
+ * SUMMARY:
+ * 01) 로그인
+ * 02) 메인
+ */
+
+/* **************************************** *
+ * 로그인
+ * **************************************** */
+.wrap {
+    min-width: 1280px;
+}
+
+.login-wrap {
+    background: var(--gt-green-bg);
+    height: 100vh;
+}
+
+.login-area {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    height: 100vh;
+}
+
+.login-area img {
+    width: 200px;
+}
+
+.login {
+    align-items: center;
+    background: var(--gt-write);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 40px;
+    width: 400px;
+}
+
+/* **************************************** *
+ * 메인
+ * **************************************** */
+main {
+    background: var(--gt-gray-bg);
+    min-height: calc(100vh - 80px);
+}
+
+main .content {
+    padding: 40px 0;
+}
+
+main .content .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-statistics {
+    display: flex;
+    gap: 20px;
+}
+
+.user-statistics li {
+    color: var(--gt-black-01);
+}
+
+.user-statistics li span {
+    color: var(--gt-black-01);
+    font-weight: bold;
+}
+
+.card.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card hr {
+    background: var(--gt-gray-01);
+    opacity: .2;
+    width: 100%;
+}
+
+/* **************************************** *
+ * 그린티관리
+ * **************************************** */
+.gpm-modal .modal-content {
+    width: 660px;
+}
+
+.gpm-modal .row {
+    --bs-gutter-y: 8px;
+}
+
+.gpm-modal .date-group input {
+    width: 100%;
+}
+
+.gpm-modal hr {
+    width: 97%;
+}
+
+/* **************************************** *
+ * 알림관리_상세
+ * **************************************** */
+.notice-header {
+    align-items: center;
+    border-bottom: 1px solid var(--gt-gray-04);
+    display: flex;
+    padding: 0 0 16px 0;
+}
+
+.notice-body {
+    margin: 20px 0;
+}
+
+.notice-body-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 16px 0;
+}
+
+.notice-body ul {
+    display: flex;
+    gap: 16px;
+}
+
+.notice-body ul li,
+.notice-body ul li a {
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-md);
+}
+
+.notice-body p {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-md);
+    font-weight: 400;
+}

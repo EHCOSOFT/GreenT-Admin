@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>GreenT</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <section class="content">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="notice-wrap">
+                                <div class="notice-header">
+                                    <h1>제목을 입력해주세요</h1>
+                                </div>
+                                <div class="notice-body">
+                                    <div class="notice-body-top">
+                                        <ul>
+                                            <li>작성일 : 2023. 12. 01</li>
+                                            <li>조회수 : 22</li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">수정</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">삭제</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>텍스트를 입력해주세요 텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를
+                                        입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를
+                                        입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요텍스트를 입력해주세요</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="writingModal" class="modal-wrap content-modal gpm-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="file-group input-group horizontal">
+                                <h2>파일등록</h2>
+                                <div class="input-area">
+                                    <input type="text">
+                                    <input type="file">
+                                    <label for="text01">파일선택</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group horizontal">
+                                <label for="text01">링크</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-lg btn-gray btn-modal-close">취소</button>
+                            <button type="button" class="btn btn-lg btn-primary open-modal"
+                                data-modal-id="saveInfoModal">작성하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>GreenT</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <section class="content">
+                <div class="container">
+                    <article class="search-box">
+                        <ul class="user-statistics">
+                            <li>전체회원 : <span>650</span>명</li>
+                            <li>신규가입 : <span>650</span>명</li>
+                            <li>탈퇴 : <span>650</span>명</li>
+                        </ul>
+                        <form action="">
+                            <div class="card flex">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="input-group horizontal">
+                                            <label for="text01">성명</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="input-group horizontal">
+                                            <label for="text01">아이디</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="input-group horizontal">
+                                            <label for="text01">휴대폰</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="radio-wrap">
+                                            <h2>가입일</h2>
+                                            <div class="radio-area">
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio01" name="radio01">
+                                                    <label for="radio01">전체</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio02" name="radio01">
+                                                    <label for="radio02">오늘</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio03" name="radio01">
+                                                    <label for="radio03">어제</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio04" name="radio01">
+                                                    <label for="radio04">금월</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="date-group">
+                                            <h2>기간</h2>
+                                            <div class="date-wrap">
+                                                <input type="date" placeholder="시작일">
+                                                <span>-</span>
+                                                <input type="date" placeholder="시작일">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="radio-wrap">
+                                            <h2>그린티 지급 승인</h2>
+                                            <div class="radio-area">
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio01" name="radio01">
+                                                    <label for="radio01">전체</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio02" name="radio01">
+                                                    <label for="radio02">미지급</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio03" name="radio01">
+                                                    <label for="radio03">지급</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="radio-wrap">
+                                            <h2>원화 충전 확인</h2>
+                                            <div class="radio-area">
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio01" name="radio01">
+                                                    <label for="radio01">전체</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio02" name="radio01">
+                                                    <label for="radio02">미확인</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio03" name="radio01">
+                                                    <label for="radio03">확인</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="radio-wrap">
+                                            <h2>상태</h2>
+                                            <div class="radio-area">
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio01" name="radio01">
+                                                    <label for="radio01">전체</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio02" name="radio01">
+                                                    <label for="radio02">락업</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio03" name="radio01">
+                                                    <label for="radio03">락업 해제</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="radio-wrap">
+                                            <h2>그린티 지급</h2>
+                                            <div class="radio-area">
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio01" name="radio01">
+                                                    <label for="radio01">전체</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio02" name="radio01">
+                                                    <label for="radio02">오늘</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio03" name="radio01">
+                                                    <label for="radio03">어제</label>
+                                                </div>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio03" name="radio01">
+                                                    <label for="radio03">금월</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="date-group">
+                                            <h2>기간</h2>
+                                            <div class="date-wrap">
+                                                <input type="date" placeholder="시작일">
+                                                <span>-</span>
+                                                <input type="date" placeholder="시작일">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-lg btn-primary">검색</button>
+                                </div>
+                            </div>
+                        </form>
+                    </article>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-area">
+                                <div class="btn-group flex-end">
+                                    <button type="button" class="btn btn-sm btn-outline-gray">엑셀 다운로드</button>
+                                </div>
+                                <table class="basic-table">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>성명</th>
+                                            <th>ID</th>
+                                            <th>휴대폰</th>
+                                            <th>가입일</th>
+                                            <th>그린티</th>
+                                            <th>지급</th>
+                                            <th>원화</th>
+                                            <th>충전확인</th>
+                                            <th>그린티 지급일</th>
+                                            <th>락업상태</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#" class="check">미지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#" class="check">미확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>홍길동</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>010-2000-2000</td>
+                                            <td>2023-02-03</td>
+                                            <td>2,500,000</td>
+                                            <td>
+                                                <a href="#">지급</a>
+                                            </td>
+                                            <td>1,000,000</td>
+                                            <td>
+                                                <a href="#">확인</a>
+                                            </td>
+                                            <td>2023-02-03</td>
+                                            <td>락</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="pagination">
+                                    <ul>
+                                        <li class="prev"><a href=""><i class="ico i-arrow-left"></i></a></li>
+                                        <li class="active"><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li class="next"><a href=""><i class="ico i-arrow-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
